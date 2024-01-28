@@ -5,19 +5,20 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "plugin:vue/vue3-recommended",
-    "eslint:recommended",
-    "@nuxtjs/eslint-config-typescript",
-    "plugin:prettier/recommended",
+    'plugin:vue/vue3-recommended',
+    'eslint:recommended',
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:prettier/recommended',
   ],
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: "@typescript-eslint/parser",
-    sourceType: "module",
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
   },
-  plugins: ["vue", "@typescript-eslint"],
+  plugins: ['vue', '@typescript-eslint'],
   rules: {
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error",
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-explicit-any': 'error',
+    'vue/multi-word-component-names': 'off',
   },
-};
+}
